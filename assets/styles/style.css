@@ -1,0 +1,405 @@
+/*--------------------------------------------------------------
+# General Styles
+--------------------------------------------------------------*/
+:root {
+    --primary-color: #067e53; /* Cor principal original */
+    --secondary-color: #343a40; /* Cor secundária (ex: cinza escuro) */
+    --light-color: #f8f9fa;   /* Cor clara (ex: cinza claro) */
+    --white-color: #ffffff;
+    --text-color: #212529;    /* Cor de texto padrão */
+    --text-muted: #6c757d;    /* Cor de texto suave */
+  
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: 700; /* Montserrat Bold */
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: darken(var(--primary-color), 10%);
+    text-decoration: none;
+  }
+  
+  .section-title {
+    color: var(--secondary-color);
+    /* margin-bottom: 3rem; */ /* Ajustado via Bootstrap utilities (mb-5) */
+  }
+  
+  .text-primary {
+    color: var(--primary-color) !important;
+  }
+  
+  .bg-primary {
+      background-color: var(--primary-color) !important;
+  }
+  
+  .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active {
+      background-color: darken(var(--primary-color), 10%);
+      border-color: darken(var(--primary-color), 10%);
+  }
+  
+  /*--------------------------------------------------------------
+  # Preloader (Opcional)
+  --------------------------------------------------------------*/
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  #preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  #preloader .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(6, 126, 83, 0.2); /* Cor primária com opacidade */
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .header {
+      /* Mantido sticky pelo Bootstrap 'sticky-top' */
+      transition: background-color 0.3s ease;
+  }
+  
+  .header-top-bar .header-info-item {
+      font-size: 0.9rem;
+  }
+  
+  .header-top-bar .header-info-item i {
+      font-size: 1.2rem; /* Tamanho do ícone */
+  }
+  
+  .header-top-bar .social-icon i {
+      font-size: 1.1rem;
+  }
+  .header-top-bar .social-icon:hover {
+      color: var(--primary-color) !important;
+  }
+  
+  
+  .navbar-brand img {
+      max-height: 50px; /* Ajuste a altura do logo */
+      width: auto;
+  }
+  
+  .navbar .nav-link {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.8rem 1rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active {
+    color: var(--primary-color);
+  }
+  
+  /* Smooth scroll padding */
+  :target {
+    scroll-margin-top: 100px; /* Ajuste conforme a altura do seu header fixo */
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Slider
+  --------------------------------------------------------------*/
+  #hero-slider .carousel-item {
+    height: 70vh; /* Altura do slider, ajuste conforme necessário */
+    min-height: 400px;
+  }
+  
+  #hero-slider .carousel-item img {
+    object-fit: cover; /* Garante que a imagem cubra o espaço */
+    height: 100%;
+    width: 100%;
+  }
+  
+  /*--------------------------------------------------------------
+  # Valores Section
+  --------------------------------------------------------------*/
+  #valores img {
+      filter: brightness(0) invert(1); /* Deixa ícones brancos se forem PNG pretos */
+  }
+  
+  /*--------------------------------------------------------------
+  # About & Services Sections
+  --------------------------------------------------------------*/
+  .section-about img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .service-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-list i {
+    width: 20px; /* Espaço para o ícone */
+  }
+  
+  /*--------------------------------------------------------------
+  # Paper Machine Section
+  --------------------------------------------------------------*/
+  .section-feature {
+      position: relative;
+      background-attachment: fixed; /* Efeito Parallax (se desejado) */
+  }
+  
+  .section-feature-overlay {
+      position: relative; /* Para garantir que o conteúdo fique sobre o overlay */
+      background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro semi-transparente */
+      padding: 4rem 2rem;
+      border-radius: 0.5rem;
+      z-index: 1;
+  }
+  
+  .service-list-light li {
+    padding: 0.4rem 0;
+     display: flex;
+    align-items: start;
+  }
+  
+  .service-list-light i {
+    color: var(--primary-color);
+    margin-top: 4px; /* Alinha melhor com o texto */
+     width: 20px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Clients Section
+  --------------------------------------------------------------*/
+  .clients-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajuste a altura conforme necessário */
+  }
+  
+  .client-logo {
+    max-height: 70px; /* Ajuste a altura máxima do logo */
+    max-width: 150px; /* Ajuste a largura máxima do logo */
+    width: auto;
+    filter: grayscale(100%); /* Logos em cinza */
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .clients-slider .swiper-slide:hover .client-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  
+  .clients-pagination {
+      position: static !important; /* Posiciona os bullets abaixo */
+      margin-top: 20px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Testimonials Section
+  --------------------------------------------------------------*/
+  .testimonials-slider {
+    padding-bottom: 50px; /* Espaço para botões de navegação */
+  }
+  
+  .testimonial-card {
+      border: none;
+      min-height: 250px; /* Garante altura mínima */
+  }
+  
+  .testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .blockquote {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  .blockquote-footer {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: normal;
+  }
+  
+  .testimonials-button-prev,
+  .testimonials-button-next {
+    color: var(--primary-color) !important;
+    top: auto !important;
+    bottom: 0 !important; /* Posiciona os botões embaixo */
+  }
+  .testimonials-button-prev { left: calc(50% - 40px) !important; }
+  .testimonials-button-next { right: calc(50% - 40px) !important; }
+  
+  
+  /*--------------------------------------------------------------
+  # Contact Section
+  --------------------------------------------------------------*/
+  .section-contact {
+      position: relative;
+  }
+  
+  .section-contact-overlay {
+      background-color: rgba(0, 0, 0, 0.75); /* Overlay mais escuro */
+      padding: 4rem 2rem;
+      border-radius: 0.5rem;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .contact-details p {
+      margin-bottom: 0;
+  }
+  
+  .contact-details i {
+      margin-bottom: 0.5rem !important;
+  }
+  
+  .section-contact .form-label {
+      font-weight: bold;
+  }
+  
+  .section-contact .form-control {
+      background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white-color);
+  }
+  .section-contact .form-control:focus {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-color: var(--primary-color);
+      color: var(--white-color);
+      box-shadow: 0 0 0 0.25rem rgba(6, 126, 83, 0.3); /* Sombra no foco */
+  }
+  .section-contact .form-control::placeholder { /* Estilo do Placeholder */
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1; /* Firefox */
+  }
+  
+  .social-icon-contact i {
+      transition: color 0.3s ease;
+  }
+  .social-icon-contact:hover i {
+       color: var(--primary-color) !important;
+  }
+  
+  #form-messages .alert {
+      color: #fff;
+      border: none;
+  }
+  #form-messages .alert-success { background-color: #198754; } /* Verde sucesso */
+  #form-messages .alert-danger { background-color: #dc3545; } /* Vermelho erro */
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  .footer {
+      font-size: 0.9rem;
+  }
+  
+  .social-icon-footer i {
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+  }
+  .social-icon-footer:hover {
+      color: var(--primary-color) !important;
+  }
+  
+  /*--------------------------------------------------------------
+  # Responsive Adjustments (Exemplos)
+  --------------------------------------------------------------*/
+  @media (max-width: 991.98px) {
+      :target {
+        scroll-margin-top: 70px; /* Ajuste para header menor em mobile */
+      }
+  
+      .header-top-bar {
+          display: none; /* Esconde a barra superior em telas menores */
+      }
+  
+      #hero-slider .carousel-item {
+          height: 50vh;
+      }
+  }
+  
+  @media (max-width: 767.98px) {
+      .section-title {
+          font-size: 1.8rem; /* Título menor em mobile */
+      }
+  
+      .testimonial-card .row {
+          flex-direction: column;
+          text-align: center;
+      }
+      .testimonial-card .col-md-3 { width: 100%; }
+      .testimonial-card .col-md-9 { width: 100%; }
+      .testimonial-img { margin-bottom: 1rem; }
+      .blockquote { text-align: center; }
+  
+      .testimonials-button-prev { left: 20px !important; }
+      .testimonials-button-next { right: 20px !important; }
+  
+      .section-contact-overlay,
+      .section-feature-overlay {
+          padding: 2rem 1rem;
+      }
+  
+       .contact-details .col-md-4 {
+          margin-bottom: 2rem !important;
+      }
+  }
