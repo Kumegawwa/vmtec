@@ -156,8 +156,8 @@
   # Hero Slider
   --------------------------------------------------------------*/
   #hero-slider .carousel-item {
-    height: 70vh; /* Altura padrão para desktop */
-    min-height: 400px;
+    height: 55vh; /* Altura padrão para desktop */
+    min-height: 300px;
     position: relative; /* Necessário para posicionar a imagem absolutamente */
     overflow: hidden; /* Garante que nada transborde */
   }
@@ -478,27 +478,18 @@
   }
   
   /* Animação simples para itens aparecendo/desaparecendo (opcional) */
-  /* .project-item[style*="display: none"] {
+  .project-item[style*="display: none"] {
     opacity: 0;
     transform: scale(0.9);
-  } */
-  
-  
-  /* Responsive adjustments para filtros (se necessário) */
-  @media (max-width: 767.98px) {
-      #project-filter .btn-filter-proj {
-          font-size: 0.8rem;
-          padding: 0.5rem 0.8rem;
-      }
-  }
-  
+  } 
+
   /*--------------------------------------------------------------
   # Responsive Adjustments (Exemplos)
   --------------------------------------------------------------*/
   @media (max-width: 991.98px) {
     #hero-slider .carousel-item {
-      height: 60vh; /* Altura reduzida para tablets */
-      min-height: 350px; /* Reduz a altura mínima */
+      height: 50vh; /* Altura reduzida para tablets */
+      min-height: 280px; /* Reduz a altura mínima */
     }
      /* Deixar controles/indicadores um pouco menores */
     #hero-slider .carousel-control-prev-icon,
@@ -514,8 +505,8 @@
   
   @media (max-width: 767.98px) {
     #hero-slider .carousel-item {
-      height: 40vh;    /* Altura significativamente reduzida para celulares */
-      min-height: 200px; /* Altura mínima bem menor (ou pode remover se 50vh for suficiente) */
+      height: 45vh;    /* Altura significativamente reduzida para celulares */
+      min-height: 250px; /* Altura mínima bem menor (ou pode remover se 50vh for suficiente) */
     }
      /* Controles/indicadores ainda menores e talvez reposicionar indicadores */
      #hero-slider .carousel-control-prev-icon,
@@ -534,7 +525,7 @@
 
   @media (max-width: 575.98px) {
     #hero-slider .carousel-item {
-      height: 45vh; /* Ainda menor */
-      min-height: 240px; /* Pode ser necessário ajustar ou remover */
+      height: 50vh; /* Ainda menor */
+      min-height: 280px; /* Pode ser necessário ajustar ou remover */
     }
   }
