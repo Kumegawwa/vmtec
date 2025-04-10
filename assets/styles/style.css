@@ -127,6 +127,13 @@
       color: var(--primary-color) !important;
   }
   
+  .social-icon[aria-label="Facebook"]:hover {
+    color: #1877f2; /* Azul do Facebook */
+  }
+
+  .social-icon[aria-label="WhatsApp"]:hover {
+      color: #25D366; /* Verde do WhatsApp */
+  }
   
   .navbar-brand img {
       max-height: 50px; /* Ajuste a altura do logo */
