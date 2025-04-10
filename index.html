@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>VMTEC Engenharia - Soluções Industriais</title>
+    <meta name="description" content="A VMTEC Engenharia oferece soluções em Manutenção, Montagem e Instalações Industriais, NR12, Caldeiraria e mais.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome (opcional, se ainda quiser usar para ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS (se usar para sliders de Clientes/Depoimentos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='css/style.css' type='text/css' />
+
+</head>
+
+<body>
+    <!-- PAGE PRELOADER (Opcional, pode ser removido ou simplificado) -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header sticky-top shadow-sm">
+        <!-- Top Bar Info -->
+        <div class="header-top-bar bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <div class="d-flex justify-content-start">
+                            <div class="header-info-item me-4 d-flex align-items-center">
+                                <i class="fa fa-clock me-2 text-primary"></i>
+                                <div>
+                                    <small class="text-muted">Atendimento</small><br>
+                                    <span class="fw-semibold">Segunda-Sexta: 8:00 - 18:00</span>
+                                </div>
+                            </div>
+                            <div class="header-info-item me-4 d-flex align-items-center">
+                                <i class="fa fa-phone me-2 text-primary"></i>
+                                <div>
+                                    <span class="fw-semibold">(41) 98807-6822</span><br>
+                                    <small class="text-muted">engenharia@vmtec.eng.br</small>
+                                </div>
+                            </div>
+                             <div class="header-info-item d-flex align-items-center">
+                                <i class="fa fa-map-marker-alt me-2 text-primary"></i>
+                                <div>
+                                     <small class="text-muted">Av. Francisco Ferreira da Cruz, 3412</small><br>
+                                     <span class="fw-semibold">Fazenda Rio Grande - PR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-end">
+                        <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon text-secondary me-2" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <!-- Adicionar outros icones sociais aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="images/logo-vmtec.png" alt="VMTEC Engenharia Logo" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quemsomos">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clientes">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SLIDER -->
+        <section id="hero-slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slider2_background.jpg" class="d-block w-100" alt="Slider Image 1" loading="eager">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider5_background.jpg" class="d-block w-100" alt="Slider Image 2" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider4_background.jpg" class="d-block w-100" alt="Slider Image 3" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider1_background.jpg" class="d-block w-100" alt="Slider Image 4" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Slide3_Bg-1.jpg" class="d-block w-100" alt="Slider Image 5" loading="lazy">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- VALUES SECTION -->
+        <section id="valores" class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img class="mb-3" src="images/industrial_nasa-1-100x100.png" width="80" height="80" alt="Ícone Pessoas" />
+                        <h3 class="h4 fw-bold">PESSOAS</h3>
+                        <p>Acreditamos que nosso sucesso está diretamente ligado ao crescimento profissional e a valorização das pessoas.</p>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <!-- Pode adicionar Missão aqui -->
+                         <img class="mb-3" src="images/industrial_factory-100x100.png" width="80" height="80" alt="Ícone Missão" /> <!-- Exemplo de icone -->
+                         <h3 class="h4 fw-bold">MISSÃO</h3>
+                         <p>Entregar soluções de engenharia industrial com excelência, segurança e pontualidade, superando as expectativas dos clientes.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="mb-3" src="images/industrial_depository-1-100x100.png" width="80" height="80" alt="Ícone Visão" />
+                        <h3 class="h4 fw-bold">VISÃO</h3>
+                        <p>Ser uma empresa inovadora que projeta, fabrica e distribui soluções, serviços e produtos no setor industrial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="quemsomos" class="py-5 section-about">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded shadow-sm" src="images/quintus_pic1.jpg" alt="Equipe VMTEC trabalhando" loading="lazy" />
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title display-5 fw-bold mb-3">QUEM SOMOS</h2>
+                        <p class="lead">A VMTEC Engenharia é uma empresa especializada em Manutenção, Montagem e Instalações Industriais.</p>
+                        <p>Nossos principais clientes incluem: Mondelez, Sumitomo, Volvo do Brasil, Leão Alimentos e Bebidas, Coca Cola, BRF, Kapazi, Audi/Volkswagen, Renault do Brasil, entre outros.</p>
+                        <div id="videoholder" class="mt-4 text-center shadow rounded overflow-hidden" style="max-width: 600px; margin: auto;">
+                            <video id="videoplayer" class="img-fluid" controls poster="images/video_poster.jpg"> <!-- Adicione uma imagem de poster -->
+                                <source src="video/vmtec_apresentacao.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="servicos" class="py-5 bg-light section-about">
+            <div class="container">
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                     <div class="col-lg-6">
+                        <img class="img-fluid rounded shadow-sm" src="images/quintus_pic2.jpg" alt="Serviços Industriais VMTEC" loading="lazy" />
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title display-5 fw-bold mb-3">NOSSOS SERVIÇOS</h2>
+                        <ul class="list-unstyled service-list">
+                            <li><i class="fas fa-check text-primary me-2"></i>Manutenção e Instalações Industriais;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Montagem de Rede de Combate à Incêndios;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Serviços especializados em soldagens especiais, metalurgia e Caldeiraria Industrial;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Isolamento Térmico em Tubulações Industriais;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Isolamento Acústico;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Projeto e Instalações de Sistemas de Exaustão Industrial;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Projetos e instalações de rede de Hidrantes, Rede de ar, Rede de gás LP, Vapor e utilidades;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Projetos e instalações de infraestrutura de rede elétrica industrial;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Projetos, instalações e adequações de segurança em máquinas e equipamentos (NR12);</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Desenvolvimento de Projetos e dispositivos envolvendo fabricação e usinagem;</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Corpo técnico com todas as NRs necessárias para execução das atividades.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAPER MACHINE MAINTENANCE SECTION -->
+        <section id="manutencao-papel" class="py-5 section-feature" style="background: url('images/mt_quintus_about_image4_bg.jpg') no-repeat center center; background-size: cover;">
+            <div class="container section-feature-overlay">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <img src="images/mt_quintus_about_image4.jpg" alt="Manutenção Máquina de Papel" class="img-fluid rounded shadow-sm" loading="lazy"/>
+                    </div>
+                    <div class="col-lg-7 text-white">
+                        <h2 class="display-6 fw-bold mb-3">Manutenção Industrial Proposta para Máquinas de Papel</h2>
+                        <p class="lead">Breve resumo das melhorias propostas para nossos clientes:</p>
+                        <ul class="list-unstyled service-list-light mt-3">
+                            <li><i class="fas fa-check-circle me-2"></i>Averiguação da Capacidade produtiva de todos os Equipamentos.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Verificação de toda parte elétrica instalada (Kw x Tonelada) para otimizar consumo.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Conferência da curva de drenagem da Mesa Plana e atrito dos elementos.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Conferência da eficiência dos elementos estacionários da mesa plana.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Conferência do sistema de condicionamento dos feltros.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Conferência do teor seco (saída mesa plana, prensas, entrada secadores).</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Comparação do Lay Out das Telas secadoras.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Comparação do CFM das telas secadoras conforme evaporação.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Elaboração da curva de secagem para avaliar eficiência.</li>
+                            <li><i class="fas fa-check-circle me-2"></i>Pequenos ajustes podem gerar economia considerável e aumento de produção.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS SECTION -->
+        <section id="clientes" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center display-6 fw-bold mb-5">NOSSOS CLIENTES</h2>
+                 <!-- Swiper -->
+                <div class="swiper clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center"><img src="images/leao-alimentos.png" alt="Leão Alimentos Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/group-renault.png" alt="Grupo Renault Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/volvo.png" alt="Volvo Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/audi.png" alt="Audi Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/mondelez.png" alt="Mondelez Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/brf.png" alt="BRF Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="images/dunlop.png" alt="Dunlop Logo" class="client-logo" loading="lazy"></div>
+                        <!-- Adicionar mais logos de clientes aqui -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination clients-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="depoimentos" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center display-6 fw-bold mb-5">DEPOIMENTOS</h2>
+                 <!-- Swiper -->
+                 <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Depoimento 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-card card h-100 shadow-sm">
+                                <div class="row g-0 align-items-center h-100">
+                                    <div class="col-md-3 text-center p-3">
+                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto André Fadrique" loading="lazy">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><i class="fas fa-quote-left text-primary me-2"></i>Ótimo trabalho, realizado com segurança e dentro do prazo com o resultado atendendo o que foi solicitado. Obrigado meu amigo por sua dedicação e empenho em realizar mais uma obra com o padrão VMTEC.</p>
+                                                <footer class="blockquote-footer mt-2"><cite title="Nome">André Fadrique</cite>, Groupe Renault</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Depoimento 2 -->
+                         <div class="swiper-slide">
+                            <div class="testimonial-card card h-100 shadow-sm">
+                                <div class="row g-0 align-items-center h-100">
+                                    <div class="col-md-3 text-center p-3">
+                                        <img src="images/mt_quintus_member3.png" class="testimonial-img rounded-circle" alt="Foto Leandro Coelho" loading="lazy">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><i class="fas fa-quote-left text-primary me-2"></i>O Volnei possui características indispensáveis... Determinado, assertivo, possui uma singular capacidade para trabalhos em equipe... Recomendo para qualquer projeto na área industrial.</p>
+                                                <footer class="blockquote-footer mt-2"><cite title="Nome">Leandro Coelho</cite>, Petrobrás</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Depoimento 3 -->
+                         <div class="swiper-slide">
+                            <div class="testimonial-card card h-100 shadow-sm">
+                                <div class="row g-0 align-items-center h-100">
+                                    <div class="col-md-3 text-center p-3">
+                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto Luís Benatti" loading="lazy">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><i class="fas fa-quote-left text-primary me-2"></i>A VMTEC é uma empresa que presa muito pela qualidade e prazo de entrega... possuem aptidões Técnicas para desenvolvimento de projetos NR 12... Excelente relacionamento com clientes...</p>
+                                                <footer class="blockquote-footer mt-2"><cite title="Nome">Luís Benatti</cite>, Leão Alimentos e Bebidas</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Depoimento 4 -->
+                         <div class="swiper-slide">
+                            <div class="testimonial-card card h-100 shadow-sm">
+                                <div class="row g-0 align-items-center h-100">
+                                    <div class="col-md-3 text-center p-3">
+                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto Rivair Lopes" loading="lazy">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                                <p><i class="fas fa-quote-left text-primary me-2"></i>Trabalhou com atuação de 1996 a 1998... O Sr. Volnei Oliveira trabalhou com destacado senso de responsabilidade e criatividade... muito produtivo e atencioso em seu Trabalho.</p>
+                                                <footer class="blockquote-footer mt-2"><cite title="Nome">Rivair Lopes</cite>, REICK do Brasil</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Adicionar mais depoimentos -->
+                    </div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next testimonials-button-next"></div>
+                    <div class="swiper-button-prev testimonials-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contato" class="py-5 section-contact" style="background: url('images/contact_bg.jpg') no-repeat center center fixed; background-size: cover;">
+            <div class="container section-contact-overlay text-white">
+                <h2 class="section-title text-center display-6 fw-bold mb-5">FALE CONOSCO</h2>
+
+                 <div class="row mb-5 text-center contact-details">
+                    <div class="col-md-4 mb-3">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                        <h4 class="h5 fw-bold">ENDEREÇO</h4>
+                        <p>Av. Francisco Ferreira da Cruz, 3412<br>Bairro Eucaliptos<br>Fazenda Rio Grande - PR</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                         <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                        <h4 class="h5 fw-bold">TELEFONES</h4>
+                        <p>(41) 98807-6822</p>
+                        <i class="fas fa-envelope fa-2x text-primary mt-3 mb-2"></i>
+                         <h4 class="h5 fw-bold">EMAIL</h4>
+                        <p>engenharia@vmtec.eng.br</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                         <i class="fas fa-share-alt fa-2x text-primary mb-2"></i>
+                        <h4 class="h5 fw-bold">SOCIAL</h4>
+                        <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-contact text-white me-2 fs-4" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                         <!-- Adicionar outros icones sociais aqui -->
+                    </div>
+                </div>
+
+                <form id="contactForm" action="php/contact_mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstName" name="user_first_name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="lastName" name="user_last_name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="user_email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="subject" name="user_subject" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" name="user_message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                         <button type="submit" class="btn btn-primary btn-lg px-5">Enviar Mensagem</button>
+                    </div>
+                     <div id="form-messages" class="mt-3 text-center"></div> <!-- Para exibir sucesso/erro -->
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <p class="mb-0">© <span id="currentYear"></span> VMTEC Engenharia. Todos os direitos reservados.</p>
+                </div>
+                 <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-footer text-white me-2" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                     <!-- Adicionar outros icones sociais aqui -->
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js" defer></script>
+
+</body>
+</html>
