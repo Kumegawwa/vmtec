@@ -52,16 +52,27 @@ O site apresenta informações sobre a empresa, seus valores, serviços, cliente
 ├── index.html # Página principal
 
 ├── projetos.html # Página da galeria de projetos
+
 ├── assets/
+
 │ ├── styles/
+
 │ │ └── style.css # Folha de estilos principal
+
 │ ├── scripts/
+
 │ │ ├── script.js # Script JavaScript principal
+
 │ │ └── contato.php # Script PHP para processar o formulário
+
 │ ├── images/ # Imagens gerais (logo, favicon, slides, clientes, etc.)
+
 │ │ └── projetos/ # Imagens específicas dos projetos
+
 │ ├── icons/ # Ícones SVG personalizados (missao, visao, etc.)
+
 │ └── video/ # Arquivos de vídeo (apresentacao)
+
 └── README.md # Este arquivo
 
 ## Como Executar Localmente
