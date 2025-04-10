@@ -156,14 +156,36 @@
   # Hero Slider
   --------------------------------------------------------------*/
   #hero-slider .carousel-item {
-    height: 70vh; /* Altura do slider, ajuste conforme necessário */
+    height: 70vh; /* Altura padrão para desktop */
     min-height: 400px;
+    position: relative; /* Necessário para posicionar a imagem absolutamente */
+    overflow: hidden; /* Garante que nada transborde */
   }
   
   #hero-slider .carousel-item img {
     object-fit: cover; /* Garante que a imagem cubra o espaço */
     height: 100%;
     width: 100%;
+    position: absolute; /* Faz a imagem preencher o .carousel-item */
+    top: 0;
+    left: 0;
+  }
+  
+  /* Ajustes nos controles e indicadores (opcional, mas recomendado para mobile) */
+  #hero-slider .carousel-control-prev-icon,
+  #hero-slider .carousel-control-next-icon {
+      width: 2rem; /* Tamanho padrão */
+      height: 2rem;
+  }
+  #hero-slider .carousel-indicators {
+      bottom: 20px; /* Posição padrão */
+  }
+  #hero-slider .carousel-indicators button {
+     width: 12px; /* Tamanho padrão */
+     height: 12px;
+     border-radius: 50%;
+     margin-left: 3px;
+     margin-right: 3px;
   }
   
   /*--------------------------------------------------------------
@@ -474,42 +496,45 @@
   # Responsive Adjustments (Exemplos)
   --------------------------------------------------------------*/
   @media (max-width: 991.98px) {
-      :target {
-        scroll-margin-top: 70px; /* Ajuste para header menor em mobile */
-      }
-  
-      .header-top-bar {
-          display: none; /* Esconde a barra superior em telas menores */
-      }
-  
-      #hero-slider .carousel-item {
-          height: 90vh;
-      }
+    #hero-slider .carousel-item {
+      height: 60vh; /* Altura reduzida para tablets */
+      min-height: 350px; /* Reduz a altura mínima */
+    }
+     /* Deixar controles/indicadores um pouco menores */
+    #hero-slider .carousel-control-prev-icon,
+    #hero-slider .carousel-control-next-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+     #hero-slider .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+    }
   }
   
   @media (max-width: 767.98px) {
-      .section-title {
-          font-size: 1.8rem; /* Título menor em mobile */
-      }
-  
-      .testimonial-card .row {
-          flex-direction: column;
-          text-align: center;
-      }
-      .testimonial-card .col-md-3 { width: 100%; }
-      .testimonial-card .col-md-9 { width: 100%; }
-      .testimonial-img { margin-bottom: 1rem; }
-      .blockquote { text-align: center; }
-  
-      .testimonials-button-prev { left: 20px !important; }
-      .testimonials-button-next { right: 20px !important; }
-  
-      .section-contact-overlay,
-      .section-feature-overlay {
-          padding: 2rem 1rem;
-      }
-  
-       .contact-details .col-md-4 {
-          margin-bottom: 2rem !important;
-      }
+    #hero-slider .carousel-item {
+      height: 40vh;    /* Altura significativamente reduzida para celulares */
+      min-height: 200px; /* Altura mínima bem menor (ou pode remover se 50vh for suficiente) */
+    }
+     /* Controles/indicadores ainda menores e talvez reposicionar indicadores */
+     #hero-slider .carousel-control-prev-icon,
+     #hero-slider .carousel-control-next-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    #hero-slider .carousel-indicators {
+       bottom: 10px; /* Move os indicadores um pouco para cima */
+    }
+     #hero-slider .carousel-indicators button {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    #hero-slider .carousel-item {
+      height: 45vh; /* Ainda menor */
+      min-height: 240px; /* Pode ser necessário ajustar ou remover */
+    }
   }
