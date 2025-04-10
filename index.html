@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
     <title>VMTEC Engenharia - Soluções Industriais</title>
     <meta name="description" content="A VMTEC Engenharia oferece soluções em Manutenção, Montagem e Instalações Industriais, NR12, Caldeiraria e mais.">
 
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel='stylesheet' href='css/style.css' type='text/css' />
+    <link rel='stylesheet' href='assets/styles/style.css' type='text/css' />
 
 </head>
 
@@ -39,8 +39,8 @@
         <div class="header-top-bar bg-light py-2 d-none d-lg-block">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <div class="d-flex justify-content-start">
+                    <div class="col-lg-12">
+                        <div class="d-flex justify-content-center flex-wrap text-center">                    
                             <div class="header-info-item me-4 d-flex align-items-center">
                                 <i class="fa fa-clock me-2 text-primary"></i>
                                 <div>
@@ -64,12 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 text-end">
-                        <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon text-secondary me-2" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <!-- Adicionar outros icones sociais aqui -->
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -78,7 +73,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand" href="/">
-                    <img src="images/logo-vmtec.png" alt="VMTEC Engenharia Logo" height="50">
+                    <img src="/assets/images/logo.png" alt="VMTEC Engenharia Logo" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -86,7 +81,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                            <a class="nav-link active" aria-current="page" href="/">Principal</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#quemsomos">Quem Somos</a>
@@ -116,7 +111,7 @@
     <main>
 
         <!-- HERO SLIDER -->
-        <section id="hero-slider" class="carousel slide" data-bs-ride="carousel">
+        <section id="hero-slider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2200">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -126,19 +121,19 @@
               </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/slider2_background.jpg" class="d-block w-100" alt="Slider Image 1" loading="eager">
+                    <img src="/assets/images/slide1.jpg" class="d-block w-100" alt="Slider Image 1" loading="eager">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider5_background.jpg" class="d-block w-100" alt="Slider Image 2" loading="lazy">
+                    <img src="/assets/images/slide2.jpg" class="d-block w-100" alt="Slider Image 2" loading="lazy">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider4_background.jpg" class="d-block w-100" alt="Slider Image 3" loading="lazy">
+                    <img src="/assets/images/slide3.jpg" class="d-block w-100" alt="Slider Image 3" loading="lazy">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider1_background.jpg" class="d-block w-100" alt="Slider Image 4" loading="lazy">
+                    <img src="/assets/images/slide4.jpg" class="d-block w-100" alt="Slider Image 4" loading="lazy">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/Slide3_Bg-1.jpg" class="d-block w-100" alt="Slider Image 5" loading="lazy">
+                    <img src="/assets/images/slide5.jpg" class="d-block w-100" alt="Slider Image 5" loading="lazy">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#hero-slider" data-bs-slide="prev">
@@ -156,18 +151,18 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <img class="mb-3" src="images/industrial_nasa-1-100x100.png" width="80" height="80" alt="Ícone Pessoas" />
+                        <img class="mb-3" src="/assets/icons/pessoas.svg" width="80" height="80" alt="Ícone Pessoas" />
                         <h3 class="h4 fw-bold">PESSOAS</h3>
                         <p>Acreditamos que nosso sucesso está diretamente ligado ao crescimento profissional e a valorização das pessoas.</p>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <!-- Pode adicionar Missão aqui -->
-                         <img class="mb-3" src="images/industrial_factory-100x100.png" width="80" height="80" alt="Ícone Missão" /> <!-- Exemplo de icone -->
+                         <img class="mb-3" src="/assets/icons/missão.svg" width="80" height="80" alt="Ícone Missão" /> <!-- Exemplo de icone -->
                          <h3 class="h4 fw-bold">MISSÃO</h3>
                          <p>Entregar soluções de engenharia industrial com excelência, segurança e pontualidade, superando as expectativas dos clientes.</p>
                     </div>
                     <div class="col-md-4">
-                        <img class="mb-3" src="images/industrial_depository-1-100x100.png" width="80" height="80" alt="Ícone Visão" />
+                        <img class="mb-3" src="/assets/icons/visão.svg" width="80" height="80" alt="Ícone Visão" />
                         <h3 class="h4 fw-bold">VISÃO</h3>
                         <p>Ser uma empresa inovadora que projeta, fabrica e distribui soluções, serviços e produtos no setor industrial.</p>
                     </div>
@@ -179,30 +174,34 @@
         <section id="quemsomos" class="py-5 section-about">
             <div class="container">
                 <div class="row align-items-center g-5">
+                    <!-- Imagem -->
                     <div class="col-lg-6">
-                        <img class="img-fluid rounded shadow-sm" src="images/quintus_pic1.jpg" alt="Equipe VMTEC trabalhando" loading="lazy" />
+                        <img class="img-fluid rounded shadow-sm" src="/assets/images/quem_somos.jpg" alt="Equipe VMTEC trabalhando" loading="lazy" />
                     </div>
-                    <div class="col-lg-6">
+        
+                    <!-- Texto e Vídeo -->
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <h2 class="section-title display-5 fw-bold mb-3">QUEM SOMOS</h2>
                         <p class="lead">A VMTEC Engenharia é uma empresa especializada em Manutenção, Montagem e Instalações Industriais.</p>
-                        <p>Nossos principais clientes incluem: Mondelez, Sumitomo, Volvo do Brasil, Leão Alimentos e Bebidas, Coca Cola, BRF, Kapazi, Audi/Volkswagen, Renault do Brasil, entre outros.</p>
-                        <div id="videoholder" class="mt-4 text-center shadow rounded overflow-hidden" style="max-width: 600px; margin: auto;">
-                            <video id="videoplayer" class="img-fluid" controls poster="images/video_poster.jpg"> <!-- Adicione uma imagem de poster -->
-                                <source src="video/vmtec_apresentacao.mp4" type="video/mp4">
+                        <p>Nossos principais clientes incluem: Mondelez, Sumitomo, Volvo do Brasil, Leão Alimentos e Bebidas, Coca-Cola, BRF, Kapazi, Audi/Volkswagen, Renault do Brasil, entre outros.</p>
+                        
+                        <div id="videoholder" class="mt-4 w-100 shadow rounded overflow-hidden">
+                            <video id="videoplayer" class="w-100 rounded" controls poster="assets/images/poster.png">
+                                <source src="/assets/video/vmtec_apresentacao.mp4" type="video/mp4">
                                 Seu navegador não suporta o elemento de vídeo.
                             </video>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
 
         <!-- SERVICES SECTION -->
         <section id="servicos" class="py-5 bg-light section-about">
             <div class="container">
                 <div class="row align-items-center g-5 flex-lg-row-reverse">
                      <div class="col-lg-6">
-                        <img class="img-fluid rounded shadow-sm" src="images/quintus_pic2.jpg" alt="Serviços Industriais VMTEC" loading="lazy" />
+                        <img class="img-fluid rounded shadow-sm" src="/assets/images/nossos_servicos.jpg" alt="Serviços Industriais VMTEC" loading="lazy" />
                     </div>
                     <div class="col-lg-6">
                         <h2 class="section-title display-5 fw-bold mb-3">NOSSOS SERVIÇOS</h2>
@@ -225,11 +224,11 @@
         </section>
 
         <!-- PAPER MACHINE MAINTENANCE SECTION -->
-        <section id="manutencao-papel" class="py-5 section-feature" style="background: url('images/mt_quintus_about_image4_bg.jpg') no-repeat center center; background-size: cover;">
+        <section id="manutencao-papel" class="py-5 section-feature" style="background-color: #616161;">
             <div class="container section-feature-overlay">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-5 d-none d-lg-block">
-                        <img src="images/mt_quintus_about_image4.jpg" alt="Manutenção Máquina de Papel" class="img-fluid rounded shadow-sm" loading="lazy"/>
+                        <img src="/assets/images/maquinas_papel.jpeg" alt="Manutenção Máquina de Papel" class="img-fluid rounded shadow-sm" loading="lazy"/>
                     </div>
                     <div class="col-lg-7 text-white">
                         <h2 class="display-6 fw-bold mb-3">Manutenção Industrial Proposta para Máquinas de Papel</h2>
@@ -249,7 +248,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
 
         <!-- CLIENTS SECTION -->
         <section id="clientes" class="py-5 bg-light">
@@ -258,13 +257,13 @@
                  <!-- Swiper -->
                 <div class="swiper clients-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide text-center"><img src="images/leao-alimentos.png" alt="Leão Alimentos Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/group-renault.png" alt="Grupo Renault Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/volvo.png" alt="Volvo Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/audi.png" alt="Audi Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/mondelez.png" alt="Mondelez Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/brf.png" alt="BRF Logo" class="client-logo" loading="lazy"></div>
-                        <div class="swiper-slide text-center"><img src="images/dunlop.png" alt="Dunlop Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/leao.png" alt="Leão Alimentos Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/renault.png" alt="Grupo Renault Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/volvo.png" alt="Volvo Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/audi.png" alt="Audi Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/mondelez.png" alt="Mondelez Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/brf.png" alt="BRF Logo" class="client-logo" loading="lazy"></div>
+                        <div class="swiper-slide text-center"><img src="/assets/images/dunlop.png   " alt="Dunlop Logo" class="client-logo" loading="lazy"></div>
                         <!-- Adicionar mais logos de clientes aqui -->
                     </div>
                     <!-- Add Pagination -->
@@ -285,7 +284,7 @@
                             <div class="testimonial-card card h-100 shadow-sm">
                                 <div class="row g-0 align-items-center h-100">
                                     <div class="col-md-3 text-center p-3">
-                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto André Fadrique" loading="lazy">
+                                        <img src="/assets/images/depoimento.png" class="testimonial-img rounded-circle" alt="Foto André Fadrique" loading="lazy">
                                     </div>
                                     <div class="col-md-9">
                                         <div class="card-body">
@@ -303,7 +302,7 @@
                             <div class="testimonial-card card h-100 shadow-sm">
                                 <div class="row g-0 align-items-center h-100">
                                     <div class="col-md-3 text-center p-3">
-                                        <img src="images/mt_quintus_member3.png" class="testimonial-img rounded-circle" alt="Foto Leandro Coelho" loading="lazy">
+                                        <img src="/assets/images/depoimento.png" class="testimonial-img rounded-circle" alt="Foto Leandro Coelho" loading="lazy">
                                     </div>
                                     <div class="col-md-9">
                                         <div class="card-body">
@@ -321,7 +320,7 @@
                             <div class="testimonial-card card h-100 shadow-sm">
                                 <div class="row g-0 align-items-center h-100">
                                     <div class="col-md-3 text-center p-3">
-                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto Luís Benatti" loading="lazy">
+                                        <img src="/assets/images/depoimento.png" class="testimonial-img rounded-circle" alt="Foto Luís Benatti" loading="lazy">
                                     </div>
                                     <div class="col-md-9">
                                         <div class="card-body">
@@ -339,7 +338,7 @@
                             <div class="testimonial-card card h-100 shadow-sm">
                                 <div class="row g-0 align-items-center h-100">
                                     <div class="col-md-3 text-center p-3">
-                                        <img src="images/mt_quintus_member2.png" class="testimonial-img rounded-circle" alt="Foto Rivair Lopes" loading="lazy">
+                                        <img src="/assets/images/depoimento.png" class="testimonial-img rounded-circle" alt="Foto Rivair Lopes" loading="lazy">
                                     </div>
                                     <div class="col-md-9">
                                         <div class="card-body">
@@ -362,81 +361,87 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contato" class="py-5 section-contact" style="background: url('images/contact_bg.jpg') no-repeat center center fixed; background-size: cover;">
-            <div class="container section-contact-overlay text-white">
-                <h2 class="section-title text-center display-6 fw-bold mb-5">FALE CONOSCO</h2>
+        <form id="contactForm" action="assets/scripts/contato.php" method="POST">
+            <section id="contato" class="py-5 section-contact" style="background: url('images/contact_bg.jpg') no-repeat center center fixed; background-size: cover;">
+                <div class="container section-contact-overlay text-white">
+                    <h2 class="section-title text-center display-6 fw-bold mb-5 text-white">FALE CONOSCO</h2>
 
-                 <div class="row mb-5 text-center contact-details">
-                    <div class="col-md-4 mb-3">
-                        <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">ENDEREÇO</h4>
-                        <p>Av. Francisco Ferreira da Cruz, 3412<br>Bairro Eucaliptos<br>Fazenda Rio Grande - PR</p>
+                     <div class="row mb-5 text-center contact-details">
+                        <div class="col-md-4 mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                            <h4 class="h5 fw-bold">ENDEREÇO</h4>
+                            <p>Av. Francisco Ferreira da Cruz, 3412<br>Bairro Eucaliptos<br>Fazenda Rio Grande - PR</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                             <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                            <h4 class="h5 fw-bold">TELEFONES</h4>
+                            <p>(41) 98807-6822</p>
+                            <i class="fas fa-envelope fa-2x text-primary mt-3 mb-2"></i>
+                             <h4 class="h5 fw-bold">EMAIL</h4>
+                            <p>engenharia@vmtec.eng.br</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                             <i class="fas fa-share-alt fa-2x text-primary mb-2"></i>
+                            <h4 class="h5 fw-bold">SOCIAL</h4>
+                            <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-contact   text-white me-2 fs-4" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                             <!-- Adicionar outros icones sociais aqui -->
+                        </div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                         <i class="fas fa-phone fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">TELEFONES</h4>
-                        <p>(41) 98807-6822</p>
-                        <i class="fas fa-envelope fa-2x text-primary mt-3 mb-2"></i>
-                         <h4 class="h5 fw-bold">EMAIL</h4>
-                        <p>engenharia@vmtec.eng.br</p>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                         <i class="fas fa-share-alt fa-2x text-primary mb-2"></i>
-                        <h4 class="h5 fw-bold">SOCIAL</h4>
-                        <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-contact text-white me-2 fs-4" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                         <!-- Adicionar outros icones sociais aqui -->
-                    </div>
+
+                    <form id="contactForm" action="php/contact_mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="firstName" name="user_first_name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="lastName" name="user_last_name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="user_email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="subject" name="user_subject" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" name="user_message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                             <button type="submit" class="btn btn-primary btn-lg px-5">Enviar Mensagem</button>
+                        </div>
+                         <div id="form-messages" class="mt-3 text-center"></div> <!-- Para exibir sucesso/erro -->
+                    </form>
                 </div>
-
-                <form id="contactForm" action="php/contact_mail.php" method="POST">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="firstName" name="user_first_name" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" id="lastName" name="user_last_name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="user_email" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="subject" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="subject" name="user_subject" required>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="message" name="user_message" rows="5" required></textarea>
-                    </div>
-                    <div class="text-center">
-                         <button type="submit" class="btn btn-primary btn-lg px-5">Enviar Mensagem</button>
-                    </div>
-                     <div id="form-messages" class="mt-3 text-center"></div> <!-- Para exibir sucesso/erro -->
-                </form>
-            </div>
-        </section>
-
+            </section>
+        </form>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-2 mb-md-0">
                     <p class="mb-0">© <span id="currentYear"></span> VMTEC Engenharia. Todos os direitos reservados.</p>
                 </div>
-                 <div class="col-md-6 text-md-end">
+                <div class="col-md-6 text-md-end">
+                    <!-- Ícone do Facebook -->
                     <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-footer text-white me-2" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                     <!-- Adicionar outros icones sociais aqui -->
+                    <!-- Ícone do WhatsApp -->
+                    <a href="https://wa.me/5541988076822" target="_blank" rel="noopener noreferrer" class="social-icon-footer text-white ms-2" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- Adicionar outros icones sociais aqui se necessário -->
                  </div>
             </div>
         </div>
@@ -449,7 +454,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- Custom JS -->
-    <script src="js/script.js" defer></script>
+    <script src="/assets/scripts/script.js" defer></script>
 
 </body>
 </html>

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <title>VMTEC Engenharia - Nossos Projetos</title>
+    <meta name="description" content="Veja alguns dos projetos realizados pela VMTEC Engenharia em diversas áreas industriais.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS (Mantido caso use em outras partes, mas não essencial para esta página) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='/assets/styles/style.css' type='text/css' />
+
+</head>
+
+<body>
+    <!-- PAGE PRELOADER (Opcional) -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- HEADER (Idêntico ao index.html) -->
+    <header class="header sticky-top shadow-sm">
+        <!-- Top Bar Info -->
+        <div class="header-top-bar bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex justify-content-center flex-wrap text-center">
+                            <div class="header-info-item me-4 d-flex align-items-center">
+                                <i class="fa fa-clock me-2 text-primary"></i>
+                                <div>
+                                    <small class="text-muted">Atendimento</small><br>
+                                    <span class="fw-semibold">Segunda-Sexta: 8:00 - 18:00</span>
+                                </div>
+                            </div>
+                            <div class="header-info-item me-4 d-flex align-items-center">
+                                <i class="fa fa-phone me-2 text-primary"></i>
+                                <div>
+                                    <span class="fw-semibold">(41) 98807-6822</span><br>
+                                    <small class="text-muted">engenharia@vmtec.eng.br</small>
+                                </div>
+                            </div>
+                             <div class="header-info-item d-flex align-items-center">
+                                <i class="fa fa-map-marker-alt me-2 text-primary"></i>
+                                <div>
+                                     <small class="text-muted">Av. Francisco Ferreira da Cruz, 3412</small><br>
+                                     <span class="fw-semibold">Fazenda Rio Grande - PR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation (Navlink "Projetos" ativo) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/assets/images/logo.png" alt="VMTEC Engenharia Logo" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#quemsomos">Quem Somos</a> <!-- Link interno para index -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#servicos">Serviços</a> <!-- Link interno para index -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#clientes">Clientes</a> <!-- Link interno para index -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#depoimentos">Depoimentos</a> <!-- Link interno para index -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="projetos.html">Projetos</a> <!-- Link ativo -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#contato">Contato</a> <!-- Link interno para index -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT - GALERIA DE PROJETOS -->
+    <main>
+        <section id="projetos-galeria" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title text-center display-6 fw-bold mb-4">NOSSOS PROJETOS</h2>
+                <p class="lead text-center mb-5">Estes são alguns projetos executados com presteza e qualidade pela VMTEC Engenharia.</p>
+
+                <!-- Filtros -->
+                <div id="project-filter" class="text-center mb-5">
+                    <button class="btn btn-outline-primary btn-filter-proj active" data-filter="all">Todos</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="centralgas">Gás LP</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="adequacoesnr12leao">Adequações NR12</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="tanquediesel">Tanque Diesel</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="tubulacoesindustriais">Tubulações Industriais</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="exaustaoindustrial">Exaustão Industrial</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="arvorespray">Sprays Inox 316 L</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="combateincendios">Combate à Incêndios</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="isolamentotermico">Isolamento Térmico</button>
+                    <button class="btn btn-outline-primary btn-filter-proj" data-filter="estruturasmetalicas">Estruturas Metálicas</button>
+                </div>
+
+                <!-- Grid de Projetos -->
+                <div id="project-grid" class="row g-4">
+                    <!-- Projeto Item (Exemplo) -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="centralgas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-2-1.jpg" class="card-img-top" alt="Instalação Gás LP">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Equipamentos à Gás LP</h5>
+                                <p class="card-text small text-muted flex-grow-1">Projeto concluído com sucesso.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-2-1-full.jpg" data-title="Instalação de Equipamentos à Gás LP">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="centralgas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-2-3.jpg" class="card-img-top" alt="Instalação Gás LP">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Equipamentos à Gás LP</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-2-3-full.jpg" data-title="Instalação de Equipamentos à Gás LP">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="centralgas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-4-1.jpg" class="card-img-top" alt="Instalação Gás LP">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Equipamentos à Gás LP</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-4-1-full.jpg" data-title="Instalação de Equipamentos à Gás LP">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="centralgas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-4-2.jpg" class="card-img-top" alt="Instalação Gás LP">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Equipamentos à Gás LP</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe de outro ângulo.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-4-2-full.jpg" data-title="Instalação de Equipamentos à Gás LP">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-1.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">Proteção de máquina.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-1-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-2.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-2-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-3.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-3-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-4.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">Mais detalhes da proteção.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-4-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-5.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista de segurança.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-5-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-6.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">Exemplo de gradeamento.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-6-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-7.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-7-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="adequacoesnr12leao">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-5-8.jpg" class="card-img-top" alt="Adequação NR12">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Adequações de Segurança NR12</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe final da adequação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-5-8-full.jpg" data-title="Adequações de Segurança NR12">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-1.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista geral do tanque.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-1-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-2.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhes da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-2-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-3.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-3-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-4.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista de outro ângulo.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-4-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-5.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista de outro ângulo.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-5-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-6.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhes do tanque.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-6-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-7.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-7-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-8.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">Inspeção detalhada.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-8-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-9.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-9-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tanquediesel">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-7-10.jpg" class="card-img-top" alt="Tanque Diesel">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação e Inspeção de Tanque Diesel</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-7-10-full.jpg" data-title="Instalação e Inspeção de Tanque Diesel">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Adicione os demais projetos aqui seguindo o mesmo padrão -->
+                    <!-- Exemplo Tubulações Industriais -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-1.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">Instalação de tubulação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-1-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-2.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-2-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-3.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-3-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-4.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-4-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-5.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-5-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-6.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-6-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-7.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-7-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-8.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-8-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ... (adicione todos os outros projetos 9-3 a 9-9) ... -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="tubulacoesindustriais">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-9-9.jpg" class="card-img-top" alt="Tubulações Industriais">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-9-9-full.jpg" data-title="Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Exaustão Industrial -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="exaustaoindustrial">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-10-1.jpg" class="card-img-top" alt="Exaustão Industrial">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sistema de Exaustão Industrial</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe dos dutos.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-10-1-full.jpg" data-title="Sistema de Exaustão Industrial">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="exaustaoindustrial">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-10-2.jpg" class="card-img-top" alt="Exaustão Industrial">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sistema de Exaustão Industrial</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe dos dutos.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-10-2-full.jpg" data-title="Sistema de Exaustão Industrial">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="exaustaoindustrial">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-10-3.jpg" class="card-img-top" alt="Exaustão Industrial">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sistema de Exaustão Industrial</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-10-3-full.jpg" data-title="Sistema de Exaustão Industrial">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="exaustaoindustrial">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-10-4.jpg" class="card-img-top" alt="Exaustão Industrial">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sistema de Exaustão Industrial</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-10-4-full.jpg" data-title="Sistema de Exaustão Industrial">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ... (adicione todos os outros projetos 10-3 a 10-5) ... -->
+                     <div class="col-md-6 col-lg-4 project-item" data-category="exaustaoindustrial">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-10-5.jpg" class="card-img-top" alt="Exaustão Industrial">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Sistema de Exaustão Industrial</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-10-5-full.jpg" data-title="Sistema de Exaustão Industrial">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Exemplo Arvore Spray -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="arvorespray">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-11-1.jpg" class="card-img-top" alt="Arvore Spray">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Árvores de Sprays em Inox 316 L</h5>
+                                <p class="card-text small text-muted flex-grow-1">Componente em inox.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-11-1-full.jpg" data-title="Instalação de Árvores de Sprays em Inox 316 L">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="arvorespray">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-11-2.jpg" class="card-img-top" alt="Arvore Spray">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Árvores de Sprays em Inox 316 L</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe da montagem.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-11-2-full.jpg" data-title="Instalação de Árvores de Sprays em Inox 316 L">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="arvorespray">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-11-3.jpg" class="card-img-top" alt="Arvore Spray">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Árvores de Sprays em Inox 316 L</h5>
+                                <p class="card-text small text-muted flex-grow-1">Aplicação finalizada.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-11-3-full.jpg" data-title="Instalação de Árvores de Sprays em Inox 316 L">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="arvorespray">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-11-4.jpg" class="card-img-top" alt="Arvore Spray">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Árvores de Sprays em Inox 316 L</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-11-4-full.jpg" data-title="Instalação de Árvores de Sprays em Inox 316 L">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- ... (adicione todos os outros projetos 11-3 a 11-5) ... -->
+                     <div class="col-md-6 col-lg-4 project-item" data-category="arvorespray">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-11-5.jpg" class="card-img-top" alt="Arvore Spray">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Instalação de Árvores de Sprays em Inox 316 L</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-11-5-full.jpg" data-title="Instalação de Árvores de Sprays em Inox 316 L">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Combate Incendios -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-1.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-1-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-2.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-2-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-3.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe da montagem.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-3-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-4.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-4-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-5.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-5-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- ... (adicione todos os outros projetos 12-3 a 12-6) ... -->
+                      <div class="col-md-6 col-lg-4 project-item" data-category="combateincendios">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-12-6.jpg" class="card-img-top" alt="Combate Incendios">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Montagem de Rede de Combate à Incêndios</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-12-6-full.jpg" data-title="Montagem de Rede de Combate à Incêndios">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Isolamento Termico -->
+                     <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-1.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">Aplicação do isolamento.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-1-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-2.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-2-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-3.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-3-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-4.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-4-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-5.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-5-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- ... (adicione todos os outros projetos 13-3 a 13-6) ... -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="isolamentotermico">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-13-6.jpg" class="card-img-top" alt="Isolamento Termico">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Isolamento Térmico em Tubulações Industriais</h5>
+                                <p class="card-text small text-muted flex-grow-1">Acabamento final.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-13-6-full.jpg" data-title="Isolamento Térmico em Tubulações Industriais">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exemplo Estruturas Metalicas -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="estruturasmetalicas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-14-1.jpg" class="card-img-top" alt="Estruturas Metalicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fabricação e Instalação de Estruturas Metálicas</h5>
+                                <p class="card-text small text-muted flex-grow-1">Projeto da estrutura.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-14-1-full.jpg" data-title="Fabricação e Instalação de Estruturas Metálicas">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-6 col-lg-4 project-item" data-category="estruturasmetalicas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-14-2.jpg" class="card-img-top" alt="Estruturas Metalicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fabricação e Instalação de Estruturas Metálicas</h5>
+                                <p class="card-text small text-muted flex-grow-1">Detalhe da viga.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-14-2-full.jpg" data-title="Fabricação e Instalação de Estruturas Metálicas">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="estruturasmetalicas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-14-3.jpg" class="card-img-top" alt="Estruturas Metalicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fabricação e Instalação de Estruturas Metálicas</h5>
+                                <p class="card-text small text-muted flex-grow-1">AJUSTAR DESCRIÇÃO.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-14-3-full.jpg" data-title="Fabricação e Instalação de Estruturas Metálicas">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 project-item" data-category="estruturasmetalicas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-14-4.jpg" class="card-img-top" alt="Estruturas Metalicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fabricação e Instalação de Estruturas Metálicas</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-14-4-full.jpg" data-title="Fabricação e Instalação de Estruturas Metálicas">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- ... (adicione todos os outros projetos 14-3 a 14-5) ... -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="estruturasmetalicas">
+                        <div class="card h-100 shadow-sm project-card">
+                            <img src="/assets/images/projetos/projeto-14-5.jpg" class="card-img-top" alt="Estruturas Metalicas">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Fabricação e Instalação de Estruturas Metálicas</h5>
+                                <p class="card-text small text-muted flex-grow-1">Vista final da instalação.</p>
+                                <button class="btn btn-sm btn-primary stretched-link mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                        data-image="/assets/images/projetos/projeto-14-5-full.jpg" data-title="Fabricação e Instalação de Estruturas Metálicas">
+                                    Ver Detalhes <i class="fas fa-search-plus ms-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- /#project-grid -->
+            </div> <!-- /.container -->
+        </section>
+
+        <!-- Modal para Lightbox -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Detalhes do Projeto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="Imagem do Projeto" class="img-fluid mb-3" style="max-height: 75vh;">
+                        <h6 id="modalTitle" class="text-center"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER (Idêntico ao index.html) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    <p class="mb-0">© <span id="currentYear"></span> VMTEC Engenharia. Todos os direitos reservados.</p>
+                </div>
+                 <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com/VMTEC-Engenharia-585273644913440/" target="_blank" rel="noopener noreferrer" class="social-icon-footer text-white me-2" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                     <!-- Adicionar outros icones sociais aqui -->
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+
+    <!-- Swiper JS (Mantido) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+    <!-- Custom JS -->
+    <script src="/assets/scripts/script.js" defer></script>
+
+</body>
+</html>

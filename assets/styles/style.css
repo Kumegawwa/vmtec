@@ -353,11 +353,121 @@
   }
   
   .social-icon-footer i {
-      font-size: 1.2rem;
+      font-size: 2rem;
       transition: color 0.3s ease;
   }
   .social-icon-footer:hover {
       color: var(--primary-color) !important;
+  }
+
+  /*--------------------------------------------------------------
+# Projetos Page Styles
+--------------------------------------------------------------*/
+#project-filter .btn-filter-proj {
+    margin: 0 5px 10px; /* Espaçamento entre botões */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  #project-filter .btn-filter-proj.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+  }
+  
+  .project-item {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Para animação de filtro, se desejado */
+  }
+  
+  .project-card {
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    position: relative; /* Garante que o card seja o contexto para o ::after do stretched-link */
+  }
+  
+  .project-card:hover {
+     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .project-card img.card-img-top {
+    transition: transform 0.3s ease;
+    /* Tentativa: Manter a imagem na camada base */
+    position: relative;
+    z-index: 0;
+  }
+  
+  .project-card:hover img.card-img-top {
+    transform: scale(1.05);
+  }
+  
+  /* Garante que o card-body crie um contexto de empilhamento */
+  .project-card .card-body {
+     position: relative; /* Essencial para o z-index funcionar aqui */
+     z-index: 1;       /* Coloca o card-body e seu conteúdo acima da imagem (z-index: 0) */
+     background-color: var(--white-color); /* Adicione um fundo se o card for transparente e a imagem estiver 'vazando' por baixo do texto/botão */
+  }
+  
+  .project-card .card-title {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--secondary-color);
+       /* Não precisa de position/z-index aqui se o card-body já tiver */
+  }
+  
+  .project-card .btn.stretched-link {
+     font-size: 0.8rem;
+     padding: 0.4rem 0.8rem;
+     position: relative; /* Mantém position relative para o botão */
+     z-index: 2;       /* Garante que o botão esteja acima do card-body (z-index: 1) e do ::after do stretched-link (que também tende a ter z-index: 1) */
+  }
+  .project-card:hover .btn.btn-primary.stretched-link {
+    background-color: var(--primary-color); /* Garante o fundo verde original */
+    border-color: var(--primary-color);   /* Garante a borda verde original */
+    color: var(--white-color);          /* Garante o texto branco original */
+    opacity: 1;                         /* Garante opacidade total */
+  }
+
+/* Opcional: Se o problema for o hover *do próprio botão* quando o card está hoverado */
+  .project-card:hover .btn.btn-primary.stretched-link:hover {
+    /* Mantém o estilo base mesmo no hover do botão,
+       ou define um estilo de hover específico se desejar escurecer um pouco */
+    background-color: var(--primary-color); /* Mantém verde */
+    border-color: var(--primary-color);   /* Mantém verde */
+    color: var(--white-color);          /* Mantém branco */
+    /* Ou para escurecer um pouco no hover: */
+    /* background-color: #056842; */ /* Exemplo de tom mais escuro */
+    /* border-color: #056842; */
+  }
+
+  /* Ajustes para o Modal Lightbox */
+  #projectModal .modal-body img {
+      border-radius: 0.3rem; /* Borda arredondada na imagem do modal */
+  }
+  
+  #projectModal .modal-header {
+      border-bottom: 1px solid #dee2e6;
+  }
+  
+  #projectModal .modal-title {
+      font-family: var(--font-secondary);
+      color: var(--secondary-color);
+  }
+  
+  /* Animação simples para itens aparecendo/desaparecendo (opcional) */
+  /* .project-item[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.9);
+  } */
+  
+  
+  /* Responsive adjustments para filtros (se necessário) */
+  @media (max-width: 767.98px) {
+      #project-filter .btn-filter-proj {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.8rem;
+      }
   }
   
   /*--------------------------------------------------------------
@@ -373,7 +483,7 @@
       }
   
       #hero-slider .carousel-item {
-          height: 50vh;
+          height: 90vh;
       }
   }
   
