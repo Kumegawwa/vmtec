@@ -50,6 +50,7 @@ O site apresenta informações sobre a empresa, seus valores, serviços, cliente
 ## Estrutura de Arquivos (Simplificada)
 
 ├── index.html # Página principal
+
 ├── projetos.html # Página da galeria de projetos
 ├── assets/
 │ ├── styles/
