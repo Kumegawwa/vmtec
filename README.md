@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este repositório contém o código-fonte de um website desenvolvido como projeto de estudo para a empresa fictícia (ou real, se for o caso) VMTEC Engenharia. O objetivo principal foi praticar e aplicar conceitos de desenvolvimento web frontend e backend básicos, criando um site responsivo e funcional.
+Este repositório contém o código-fonte de um website desenvolvido como projeto de estudo para a empresa real VMTEC Engenharia. O objetivo principal foi praticar e aplicar conceitos de desenvolvimento web frontend e backend básicos, criando um site responsivo e funcional.
 
 O site apresenta informações sobre a empresa, seus valores, serviços, clientes, depoimentos, projetos realizados e um formulário de contato funcional.
 
